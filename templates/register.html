@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <form action="/register" method="post">
+     <img class="logo" src="static\Takeaseat.svg" alt="Take a seat logo">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Your email" type="text">
+        </div>
+
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="firstname" placeholder="How should we call you?" type="text">
+        </div>
+
+        <div class="form-group">
+            <input class="form-control" name="password" placeholder="Password" type="password">
+        </div>
+
+        <div class="form-group">
+            <input class="form-control" name="confirmation" placeholder="Password (again)" type="password">
+        </div>
+
+
+        <button class="btn btn-outline-dark" type="submit">Register</button>
+    </form>
+{% endblock %}

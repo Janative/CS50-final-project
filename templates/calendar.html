@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Calendar
+{% endblock %}
+
+{% block main %}
+<p>
+    <h3>Calendar</h3>
+</p>
+
+<div id="calendar"></div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Calendar
+    new Calendar('#calendar', {
+        enableRangeSelection: true,
+        selectRange: function (range) {
+            let start_date = `${range.startDate.getFullYear()}-${(range.startDate.getMonth() + 1).toString().padStart(2, "0")}-${range.startDate.getDate().toString().padStart(2, "0")}`;
+            let end_date = `${range.endDate.getFullYear()}-${(range.endDate.getMonth() + 1).toString().padStart(2, "0")}-${range.endDate.getDate().toString().padStart(2, "0")}`;
+            window.location = `/book?start_date=${start_date}&end_date=${end_date}`;
+        }
+    })
+})
+</script>
+
+{% endblock %}

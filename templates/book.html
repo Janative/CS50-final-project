@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Book
+{% endblock %}
+
+{% block main %}
+<p>
+    <h3>Book a seat</h3>
+</p>
+
+<form action="/book" method="post">
+    <div class="form-group">
+    <label for="istartdate" class="form-label">Pick the start day:</label>
+    <input class="form-control" type="date" id="istartdate" name="istartdate" value="{{start_date}}" autocomplete="on">
+    </div>
+    
+    <div class="form-group">
+    <label for="ienddate" class="form-label">Pick the end day:</label>
+    <input class="form-control" type="date" id="ienddate" name="ienddate" value="{{end_date}}" autocomplete="on">
+    </div>
+
+    <!--<div class="form-group">
+    <label for="iseat" class="form-label">Pick the seat:</label>
+    <select class="form-control" id="iseat" name="iseat">
+        <option disabled value="">Pick the seat</option>
+        {% for seat in seats %}
+            <option value="{{ seat.id }}">{{seat.seat_name}}</option>
+        {% endfor %}
+    </select>
+    </div>-->
+
+    <div class="form-group">
+    <label for="iseat" class="form-label">Pick the seat:</label>
+    <select class="form-control" id="iseat" name="iseat">
+        
+        <option selected value="{{seat_id}}">{{seat_name}}</option>
+        {% for seat in seats %}
+            <option value="{{ seat.id }}">{{seat.seat_name}}</option>
+        {% endfor %}
+    </select>
+    </div>
+
+    <!--<div class="form-group">
+    <label for="iseat" class="form-label">Pick the seat:</label>
+    <input class="form-control" type="text" id="iseat" name="iseat" value="{{seat_name}}">
+    </div>-->
+
+    <button class="btn btn-outline-dark" type="submit">Submit</button>
+    
+
+</form>
+
+
+
+{% endblock %}

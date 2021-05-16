@@ -1,0 +1,108 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+main .form-control 
+{
+    /* Center form controls */
+    display: inline-block;
+
+    /* Override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main .form-control:focus 
+{
+    /* Center form controls */
+    display: inline-block;
+
+    /* Override Bootstrap's 100% width for form controls */
+    width: auto;
+
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+
+
+main
+{
+    /* Scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* Center contents */
+    text-align: center;
+
+    /*background transparent */
+    background-color: white;
+   
+}
+
+
+
+main img
+{
+    /* Constrain images on small screens */
+    max-width: 100%;
+}
+
+.symbol {
+    text-transform: uppercase;
+}
+
+tr {
+    text-align: center;
+}
+
+/* Calendar-------------------------------------------------- */
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+    /*background pic */
+    background-image: url("Backgroungpic.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+
+.logo {
+    margin: 30px;
+    width:20em;
+  }
+
+  /* Seating */
+  .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#D1D1D1;stroke:#FFFFFF;stroke-width:0.25;stroke-miterlimit:11.7338;cursor:pointer}
+  .st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FF0000;stroke:#FFFFFF;stroke-width:0.25;stroke-miterlimit:11.7338;cursor:pointer}
+  .st2{fill-rule:evenodd;clip-rule:evenodd;fill:#39B54A;stroke:#FFFFFF;stroke-width:0.25;stroke-miterlimit:11.7338;cursor:pointer}
+  .st3{fill:#DDDAC7;}
+  .st4{fill-rule:evenodd;clip-rule:evenodd;fill:none;}
+  .st5{fill:#FFFFFF;}
+  .st6{font-family:'Montserrat';}
+  .st7{font-size:33px;}
+  .st8{fill:none;}
+  .st9{fill:#595957;}
+  .st10{font-size:25px;}
+
+  footer {
+      padding: 20px;
+  }
